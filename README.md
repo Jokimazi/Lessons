@@ -4,11 +4,11 @@
 
 ### Выполненые задания (Инструментальные средства разработки)
 
-##### [Работа 1](dev/ex/theme1.py)
+##### [Работа 1](dev/completed_work/сw1.py)
 
-##### [Работа 2]("dev/completed work/cw2.py")
+##### [Работа 2](dev/completed_work/cw2.py)
 
-##### [Работа 3](dev/completed work/cw3.py)
+##### [Работа 3](dev/completed_work/cw3.py)
 
 ---
 
@@ -16,6 +16,4 @@
 
 ##### [Работа 1 (Была сдана на паре)]()
 
-##### [Работа 1]("db/completed work/cw1.sql")
-
-##### [Работа 1]("db/completed work/cw1.sql")
+##### [Работа 2]()
