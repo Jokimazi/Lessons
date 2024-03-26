@@ -4,7 +4,7 @@
 
 ### Выполненые задания (Инструментальные средства разработки)
 
-##### [Работа 1]("dev/completed work/cw1.py")
+##### [Работа 1](dev/completed work/cw1.py)
 
 ##### [Работа 2]("dev/completed work/cw2.py")
 
