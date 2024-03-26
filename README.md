@@ -3,11 +3,11 @@
 
 ### Выполненые задания (Инструментальные средства разработки)
 
-#### [Работа 1]("dev/completed work/cw1")
+#### [Работа 1](dev/completed work/cw1)
 
-#### [Работа 2]("dev/completed work/cw2")
+#### [Работа 2](dev/completed work/cw2)
 
-#### [Работа 3]("dev/completed work/cw3")
+#### [Работа 3](dev/completed work/cw3)
 
 ### Выполненые задания (Проектирование баз данных)
 
