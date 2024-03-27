@@ -1,0 +1,1 @@
+print(not set(".,:;!_*-+()/#¤%&)").isdisjoint('#fg'))
