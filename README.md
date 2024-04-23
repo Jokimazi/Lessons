@@ -10,7 +10,15 @@
 
 ##### [Работа 3 (*Сдана*)](dev/completed_work/cw3.py)
 
-##### [Работа 4 (*Не проверена и не доделана*)](dev/completed_work/cw4)
+##### [Работа 4 (*Не проверена*)](dev/completed_work/cw4)
+
+##### [Работа 5 (*Не проверена*)](dev/completed_work/cw5)
+
+##### [Работа 6 (*Не проверена*)](dev/completed_work/cw6)
+
+##### [Работа 7 (*Не проверена*)](dev/completed_work/cw7)
+
+##### [Работа 8 (*Не проверена*)](dev/completed_work/cw8)
 
 ---
 
