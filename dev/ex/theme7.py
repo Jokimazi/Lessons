@@ -21,7 +21,8 @@
 
 import random
 
-class Player():
+
+class Player:
     def __init__(self, name, dmg):
         self.name = name
         self.dmg = dmg
