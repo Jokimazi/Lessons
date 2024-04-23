@@ -10,15 +10,15 @@
 
 ##### [Работа 3 (*Сдана*)](dev/completed_work/cw3.py)
 
-##### [Работа 4 (*Не проверена*)](dev/completed_work/cw4)
+##### [Работа 4 (*Сдана*)](dev/completed_work/cw4)
 
-##### [Работа 5 (*Не проверена*)](dev/completed_work/cw5)
+##### [Работа 5 (*Сдана*)](dev/completed_work/cw5)
 
-##### [Работа 6 (*Не проверена*)](dev/completed_work/cw6)
+##### [Работа 6 (*Сдана*)](dev/completed_work/cw6)
 
-##### [Работа 7 (*Не проверена*)](dev/completed_work/cw7)
+##### [Работа 7 (*Сдана*)](dev/completed_work/cw7)
 
-##### [Работа 8 (*Не проверена*)](dev/completed_work/cw8)
+##### [Работа 8 (*Сдана*)](dev/completed_work/cw8)
 
 ---
 
@@ -26,4 +26,4 @@
 
 ##### [Работа 1 (*Сдана*)](db/completed_work/cw1.sql)
 
-##### [Работа 2 (*Не проверена*)](db/completed_work/cw2.sql)
+##### [Работа 2 (*Сдана*)](db/completed_work/cw2.sql)
