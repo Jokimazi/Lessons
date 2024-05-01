@@ -38,6 +38,6 @@
 
 ##### [Работа 4 (**Не проверена*\*)](db/completed_work/cw4.sql)
 
-##### [Работа 5 (*Не сделана*)](db/completed_work/cw5.png)
+##### [Работа 5 (**Не проверена*\*)](db/completed_work/cw5.png)
 
-##### [Работа 6 (*Не сделана*)](db/completed_work/cw2.sql)
+##### [Работа 6 (**Не проверена*\*)](db/completed_work/cw6.png)
