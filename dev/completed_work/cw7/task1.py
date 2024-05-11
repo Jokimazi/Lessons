@@ -3,10 +3,7 @@
 # работоспособность можно проверить в консоли
 # или просто запустив код
 
-from colorama import init
 import random
-
-init()
 
 
 class Item:
@@ -22,9 +19,7 @@ class Item:
                  buffhealth: float = None,
                  buffhealth_max: float = None,
                  durability: int = -1,
-                 description: str = None,
-                 upgrade_name: str = None,
-                 upgrade_name_color: str = ''):
+                 description: str = None):
         self.ptype = ptype
         self.clas = clas
         self.name = name
@@ -38,8 +33,6 @@ class Item:
         self.durability_max = self.durability
         self.description = description
         self.upgradelvl = 0
-        self.upgrade_name = upgrade_name
-        self.upgrade_name_color = upgrade_name_color
 
     # Выводит информацию о предмете
     def info(self):
@@ -70,10 +63,6 @@ class Item:
         if self.buffhealth_max is not None:
             if self.buffhealth_max >= 0:
                 plus_maxh = '+'
-
-        if self.upgrade_name is not None:
-            if self.upgradelvl == 5:
-                self.name = self.upgrade_name_color + self.upgrade_name + '\033[0m'
 
         item_info = [self.name,
                      f'Тип: {self.ptype}',
@@ -127,13 +116,10 @@ class Item:
                 max_len = len(i)
 
         # Вывод верхней рамки с именем, имя всегда будет по центру
-        o = 0
-        if self.upgrade_name is not None:
-            o = len(self.upgrade_name_color) + 7
         inp = '\n╔'
         if max_len > len(self.name):
             names = ' ' + self.name + ' '
-            names = names.center(max_len+2-o, '═')
+            names = names.center(max_len+2, '═')
             inp += names
             inp += '╗'
         else:
@@ -356,13 +342,6 @@ apple = Item('используемое/еда', 'обычный', 'Яблоко'
              description='Когда-то оно упало на голову какому-то Ньютону')
 golden_apple = Item('используемое/еда', 'легендарный', 'Яблоко нотча', buffhealth=15, buffhealth_max=3, buffspeed=5,
                     description='Когда-то оно выпало из какого-то игрока при убийстве :/')
-dick = Item('оружие/член', 'эпохальный', 'Встанислав шишкин', 666, 228, 1488, durability=5,
-            description='Оружие, хозяин которого был не кто иной, '
-                        'как - Высунь Хуй Да Дай Подержать Другим. '
-                        'Погиб при странных обстоятельствах, Встанислава нашли у него в жопе. '
-                        'И теперь, разум Высунь Хуй Да Дай Подержать Другим перенесься в оружие,'
-                        ' теперь, он ищет мести.',
-            upgrade_name='Пизда ахилеса', upgrade_name_color='\033[1m\033[31m')
 
 # Небольшой скрипт для проверки
 elucidator.durability = 1
@@ -412,13 +391,3 @@ elucidator.info()
 
 ork.take_item_into_slot(elucidator)
 ork.attack(bob)
-
-bob.revive()
-
-dick.upgrade(5)
-
-dick.info()
-
-bob.take_item_into_slot(dick)
-
-bob.attack(ork)
