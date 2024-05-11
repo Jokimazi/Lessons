@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>> Перенос данных в другое окно </title>
+        <script>
+            function f1(){
+                var obj = document.getElementById('fio');
+                var win = window.open(" "," ","width=500,height=150");
+                win.document.open();
+                var str = "<center> Приветствуо Вac, "+obj.value+"! <br><br> Bы - молодец! <br><br><br>"; win.document.write(str);
+                str ='<input type="button" value="3aкpыть"'+'onClick="window.close();">';
+                win.document.write(str);
+                win.document.close();
+            }
+        </script>
+    </head>
+    <body bgcolor=green>
+        <center>
+        <h2>Здравствуйте, гость!</h2>
+        <br>
+        <input type=text id='fio' value="Введите Ио" size="40"> <br> <br>
+        <input type=button value="Пeренос данныx" OnClick="f1()"> 
+    </body>
+</html>

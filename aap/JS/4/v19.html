@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title> Получение результата исходя из полученых данных </title>
+	</head>
+	<script type="text/javascript">
+		function ex19(x, y, z)
+		{
+			return (Math.abs(Math.cos(x*(180/Math.PI))) + Math.cos(y*(180/Math.PI)) + 2 * Math.pow(Math.sin(z*(180/Math.PI)), 2))
+		}
+		
+	</script>
+	<body>
+		<h1>
+		<center>
+		<p> Получение результата по функции b = |cos x + cos y| + 2sin² z исходя из полученых данных </p>
+		</h1>
+		</center>
+		<br>
+		<script type="text/javascript">
+			var a = prompt('Введите целое число x', '');
+			var b = prompt('Введите целое число y', '');
+			var c = prompt('Введите целое число z', '');
+			var n = ex19(a, b, c);
+			document.write('x = ' + a + ', y = ' + b + ', z = ' + c + '<br>');
+			document.write('Число по функции: b = |cos x + cos y| + 2sin² z равно - ' + n);
+		</script>
+	</body>
+</html>

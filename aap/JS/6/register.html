@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Регистрация пользователя</title>
+<style>
+  body {
+    background-color: #f4f4f4;
+    font-family: Arial;
+    font-size: 16px;
+  }
+  .form-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: auto;
+    width: 50%;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  a[id="redstar"] {
+    color: #ff0000;
+    font-size: 16px;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  textarea[id='aboutyou'] {
+    min-height: 100px;
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+    resize: none;
+  }
+  button {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h1>Регистрация пользователя</h1>
+  <p>Пожалуйста, заполните форму ниже. Время на заполнение - 60с.<br><a id="redstar">*</a> - обязательные поля.</p>
+
+  <label for="nickname">Никнейм:<a id="redstar">*</a></label>
+  <input type="text" id="nickname" class="inp" required autocomplete="off"><br>
+
+  <label for="firstname">Имя:<a id="redstar">*</a></label>
+  <input type="text" id="firstname" class="inp" required autocomplete="off"><br>
+
+  <label for="secondname">Фамилия:<a id="redstar">*</a></label>
+  <input type="text" id="secondname" class="inp" required autocomplete="off"><br>
+
+  <label>Пол:</label>
+  <select class="inp">
+    <option> Не выбрано </option>
+    <option> Мужской </option>
+    <option> Женский </option>
+  </select>
+  <br><br>
+
+  <label for="aboutyou">О себе:</label>
+  <!-- <input type="text" id="aboutyou" required><br> -->
+  <textarea for="aboutyou" id="aboutyou" class="inp" maxlength="100" autocomplete="off"></textarea>
+
+  <label for="email">Электронная почта:<a id="redstar">*</a></label>
+  <input type="email" id="email" class="inp" required autocomplete="off"><br>
+
+  <label for="password">Пароль:<a id="redstar">*</a></label>
+  <input type="password" id="password" class="inp" required>
+  <input type="checkbox" id="showpassbox" class="inp" autocomplete="off"><br>
+
+  <div id="reppassvis">
+    <label for="repeatpassword">Повторите пароль:<a id="redstar">*</a></label>
+    <input type="password" id="repeatpassword" class="inp" required autocomplete="off"><br>
+  </div>
+
+
+
+  <button onclick="registerUser()" id="submitButton">Зарегистрировать</button>
+
+  <br><br><div id="errorMessage" class="message"></div>
+</div>
+
+    <script>
+        const registrationTime = 60000;
+
+        var showPass = document.getElementById('showpassbox')
+
+        showPass.addEventListener("change", function() {
+          if (showPass.checked) {
+            document.getElementById("password").setAttribute('type', 'text');
+            document.getElementById("reppassvis").innerHTML = '';
+          }
+          else {
+            document.getElementById("password").setAttribute('type', 'password');
+            document.getElementById("reppassvis").innerHTML = '<label for="repeatpassword">Повторите пароль:<a id="redstar">*</a></label><input type="password" id="repeatpassword" required autocomplete="off"><br>';
+          }
+        });
+
+        function registerUser() {
+            const delay = 1500;
+
+            if (!showPass.checked) {
+              if (document.getElementById('password').value != document.getElementById('repeatpassword').value) {
+                document.getElementById('errorMessage').textContent = 'Пароли не совпадают';
+                return;
+              }
+            }
+
+            if (!document.getElementById('nickname').value ||
+                !document.getElementById('email').value ||
+                !document.getElementById('firstname').value ||
+                !document.getElementById('secondname').value) {
+                document.getElementById('errorMessage').textContent = 'Пожалуйста, заполните все поля';
+                return;
+            }
+
+            document.getElementById('errorMessage').textContent = 'Регистрация завершена. Переход к Личному кабинету...';
+            setTimeout(function(){window.location.href = '../5/personal_area.html';}, delay);
+
+          }
+
+          document.addEventListener('DOMContentLoaded', window.setTimeout(function(){
+              alert('Вы не успели заполнить форму! Попробуйте еще раз!');
+              location.reload(true);
+            }, registrationTime));
+        </script>
+    </body>
+</html>

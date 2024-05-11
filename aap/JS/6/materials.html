@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function but(num) {
+
+                var link;
+
+                switch (num) {
+                    case 1: 
+                        link = "../5/theme.html";
+                        window.open(link);
+                        break;
+                    case 2: 
+                        link = "https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE";
+                        window.open(link);
+                        break;
+                    case 3: 
+                        link = "https://www.roscosmos.ru/102/";
+                        window.open(link);
+                        break;
+                    case 4: 
+                        link = "https://www.nasa.gov/";
+                        window.open(link);
+                        break;
+                    case 5:
+                        var newWin = window.open("", "Краткая информация", "width=500px, height=200px");
+
+                        newWin.document.write("<p>Первый выход в космос был\
+                                     совершён советским космонавтом\
+                                     Алексеем Леоновым 18 марта 1965\
+                                     года с борта космического корабля «Восход-2».</p>\
+                                     <br><br><button onclick='window.close()'>Закрыть</button>");
+                        break;
+                    case 6:
+                        var newWin = window.open("", "Полная информация", "width=1000px, height=500px");
+
+                        newWin.document.write(' <style>\
+                                                body {\
+                                                    font-family: Arial;\
+                                                    font-size: small;\
+                                                    background-color: rgb(64, 179, 255);\
+                                                }\
+                                                h1 {\
+                                                    font-size: medium;\
+                                                    font-weight: bold;\
+                                                }\
+                                                </style>\
+                                                <h1>Первый выход человека в открытый космос</h1>\
+                                                <p><b>8 марта</b> — знаковая дата для отечественной и мировой космонавтики. В этот день в 1965 году был совершен первый в истории выход в отк\
+                                                    рытый космос. Его совершил летчик-космонавт СССР, второй пилот космического корабля «Восход-2» Алексей Леонов.\
+                                                    После продолжительной подготовки на борту корабля, Алексей Леонов вышел в открытое космическое пространство в 11 часов 34 минуты. Нормальную\
+                                                     жизнедеятельность космонавта обеспечивал скафандр «Беркут». С кораблем Алексея Архиповича связывал лишь фал длинной 5,35 метра.\
+                                                    В открытом космосе <b>Алексей Леонов</b> совершил пять отходов и подходов от шлюзовой камеры, провел комплекс исследований и наблюдений.\
+                                                    С борта «Восход-2» действия пилота контролировал командир корабля Павел Беляев. Он был готов в любую минуту прийти на помощь коллеге.\
+                                                    В октябре 1965 года Международная авиационная федерация (ФАИ) утвердила мировой рекорд продолжительности пребывания человека в космическом\
+                                                     пространстве вне космического корабля 12 минут 09 секунд. Зачтено было время с момента выхода и возвращения космонавта в шлюзовую камеру.\
+                                                      На самом же деле Алексей Леонов находился в условиях космического пространства 23 минуты 41 секунду.\
+                                                    За первый в истории человечества выход в открытое космическое пространство ФАИ присудила Алексею Леонову высшую награду — золотую медаль «Космос». </p>\
+                                                    <br>\
+                                                    <img src="leonov.jpg" width=220px height=200px>\
+                                                    <br><br>\
+                                                <button onclick="window.close()">Закрыть</button><br>\
+                                                <button onclick="window.print()">Печать</button>');
+                        break;
+                    case 7:
+                        link = "home.html";
+                        window.open(link);
+                        break;
+                    default:
+                        return -1;
+                }
+            }
+        </script>
+        <style>
+            body {
+                background-image: url('../5/background_theme.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .main-box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 50%;
+                min-height: 100%;
+                padding: 10px;
+                background: rgb(255, 255, 255);
+                border-radius: 5px;
+                font-family: Arial;
+                border: 5px solid #ccc;
+            }
+            .buttons {
+                transform: translate(0, 2%);
+                top: 2%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h2 {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            button {
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                color: white;
+                border: 5px solid #b6b6b6;
+                border-radius: 30px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+                font-family: Arial;
+                font-size: x-large;
+            }
+            .button-img {
+                background-image: url('../5/background_theme.jpg');
+            }
+            button:hover {
+                opacity: 0.9;
+
+            }
+        </style>
+        <title> Сайт посвещенный космосу </title>
+    </head> 
+    <body bgcolor="#1a2b96">
+        <div class="main-box">
+            <h1> Сайт посвещенный космосу </h1>
+            <h2> Космос - относительно пустые участки Вселенной, которые лежат вне границ атмосфер небесных тел. </h2>
+            <br>
+            <div class="buttons">
+                <button class="button-img" onclick="but(1)"> Калькулятор расстояний </button>
+                <button class="button-img" onclick="but(2)"> Страница о космосе на Википедии </button>
+                <button class="button-img" onclick="but(3)"> Сайт Роскосмоса </button>
+                <button class="button-img" onclick="but(4)"> Сайт НАСА </button>
+            </div>
+            <br><br>
+            <div class="buttons">
+                <button class="button-img" onclick="but(5)"> Краткая информация </button>
+                <button class="button-img" onclick="but(6)"> Полная информация </button>
+            </div>
+            <br>
+            <button class="button-img" onclick="but(7)"> Домашняя страница </button>
+        </div>
+    </body>
+</html>

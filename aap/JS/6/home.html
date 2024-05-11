@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function but(num) {
+
+                var link;
+
+                switch (num) {
+                    case 1: 
+                        link = "../5/personal_area.html";
+                        window.open(link);
+                        break;
+                    case 2: 
+                        link = "../5/theme.html";
+                        window.open(link);
+                        break;
+                    case 3: 
+                        link = "materials.html";
+                        window.open(link);
+                        break;
+                    case 4:
+                        link = "register.html";
+                        window.open(link);
+                        break;
+                    case 5:
+                        link = "../5/auth.html";
+                        window.open(link);
+                        break;
+                    default:
+                        return;
+                }
+            }
+        </script>
+        <style>
+            body {
+                background-image: url('../5/background_theme.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .main-box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 50%;
+                min-height: 100%;
+                padding: 10px;
+                background: rgb(255, 255, 255);
+                border-radius: 5px;
+                font-family: Arial;
+                border: 5px solid #ccc;
+            }
+            .buttons {
+                transform: translate(0, 2%);
+                top: 2%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h2 {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            button {
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                color: white;
+                border: 5px solid #b6b6b6;
+                border-radius: 30px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+                font-family: Arial;
+                font-size: x-large;
+            }
+            .button-img {
+                background-image: url('../5/background_theme.jpg');
+            }
+            button:hover {
+                opacity: 0.9;
+
+            }
+        </style>
+        <title> Сайт посвещенный космосу </title>
+    </head> 
+    <body bgcolor="#1a2b96">
+        <div class="main-box">
+            <h1> Главная страница </h1>
+            <h2> Здесь вы можете перейти по другим страницам проекта. </h2>
+            <br>
+            <div class="buttons">
+                <button class="button-img" onclick="but(1)"> Личный кабинет </button>
+                <button class="button-img" onclick="but(2)"> Тема </button>
+                <button class="button-img" onclick="but(3)"> Материалы </button>
+                <br>
+                <button class="button-img" onclick="but(4)"> Регистрация </button>
+                <button class="button-img" onclick="but(5)"> Вход </button>
+            </div>
+        </div>
+    </body>
+</html>

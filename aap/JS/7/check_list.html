@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Регистрация пользователя</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial;
+            font-size: 16px;
+        }
+        .form-container {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: auto;
+            width: 50%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        a[id="redstar"] {
+            color: #ff0000;
+            font-size: 16px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        textarea[id='aboutyou'] {
+            min-height: 100px;
+            width: 150px;
+            padding: 5px;
+            margin-bottom: 10px;
+            resize: none;
+        }
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .message {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+    <body>
+        <div class="form-container">
+            <h1>Создание чек-листа</h1>
+            <p>Пожалуйста, заполните форму ниже.</p>
+
+            <label>1. Какие планету/спутник солнечной системы вы бы хотели посетить? (макс. 4)</label>
+            <select class="inp">
+                <option>Меркурий</option>
+                <option>Венера</option>
+                <option>Марс</option>
+                <option>Луна</option>
+                <option>Юпитер</option>
+                <option>Калисто</option>
+                <option>Ганимед</option>
+                <option>Европа</option>
+                <option>Титан</option>
+                <option>Сатурн</option>
+                <option>Титания</option>
+                <option>Оберон</option>
+                <option>Уран</option>
+                <option></option>
+            </select>
+
+            <label for="firstname">Имя:<a id="redstar">*</a></label>
+            <input type="text" id="firstname" class="inp" required autocomplete="off"><br>
+
+            <label for="secondname">Фамилия:<a id="redstar">*</a></label>
+            <input type="text" id="secondname" class="inp" required autocomplete="off"><br>
+
+            <label>Пол:</label>
+            <select class="inp">
+                <option> Не выбрано </option>
+                <option> Мужской </option>
+                <option> Женский </option>
+            </select>
+            <br><br>
+
+            <label for="aboutyou">О себе:</label>
+            <!-- <input type="text" id="aboutyou" required><br> -->
+            <textarea for="aboutyou" id="aboutyou" class="inp" maxlength="100" autocomplete="off"></textarea>
+
+            <label for="email">Электронная почта:<a id="redstar">*</a></label>
+            <input type="email" id="email" class="inp" required autocomplete="off"><br>
+
+            <label for="password">Пароль:<a id="redstar">*</a></label>
+            <input type="password" id="password" class="inp" required>
+            <input type="checkbox" id="showpassbox" class="inp" autocomplete="off"><br>
+
+            <div id="reppassvis">
+                <label for="repeatpassword">Повторите пароль:<a id="redstar">*</a></label>
+                <input type="password" id="repeatpassword" class="inp" required autocomplete="off"><br>
+            </div>
+
+
+
+            <button onclick="registerUser()" id="submitButton">Создать чек-лист</button>
+
+            <br><br><div id="errorMessage" class="message"></div>
+        </div>
+
+        <script>
+        </script>
+    </body>
+</html>

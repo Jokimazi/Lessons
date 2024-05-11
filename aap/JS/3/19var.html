@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title> Использование инструкции if - else </title>
+	</head>
+	<body bgcolor="green">
+		<center>
+		<script type="text/javascript">
+		alert('Имитация входа в учетную запись с попытками ввода пароля и последуещей блокировкой если попытки кончатся');
+			var login = prompt('Введите логин: ', '');
+			var pass;
+			var i = 1;
+			document.writeln('<h1><font color="white" size="7"> Аутентификация </h1><br>');
+			document.writeln('<p><font color="white"> Логин: ' + login + ' </p>');
+			do
+			{
+				pass = prompt('Введите пароль: ', '');
+				if (pass == 'qwerty12345')
+				{
+					document.writeln('<p><font color="white"> Пароль: ' + pass + ' </p><br>');
+					document.write('<p><font color="lime"> Вы успешно вошли в аккаунт! </p>');
+					break;
+				}
+				else if (i == 5)
+				{
+					document.writeln('<p><font color="white"> Пароль: ' + pass + ' </p><br>');
+					document.write('<p><font color="red"> Аккаунт заблокирован </p>');
+					break;
+				}
+				else
+				{
+					alert('Пароль не верный! Попробуйте еще раз! Осталось ' + (5-i) + ' попыток, иначе аккаунт будет заблокирован!');
+					i++;
+				}
+			}
+			while (true);
+		</script>
+		</center>
+	</body>
+</html>

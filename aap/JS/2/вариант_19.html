@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> Глобальные методы для работы с окнами </title>
+	</head>
+	<body>
+		<center>
+		<script type="text/javascript">
+			var con = true;
+			var numd = 1;
+			var num = +prompt('Введите число:', 45);
+			alert('Данный скрипт запрашивает число, а далее осходя из отвестов увеличивает его на число равное n+1, или выводит итоговое знаечние на страницу.')
+				while(con) {
+					con = confirm('Увеличить число ' + num + ' на ' + numd +'?');
+					if(con) {
+						num += numd;
+						alert('Ваше число равно ' + num + '!');
+						document.write("<br><p> Число равно " + num + "! </p>")
+						numd++;
+					}
+				}
+				alert('Итоговое число - ' + num);
+		</script>
+		</center>
+	</body>
+</html>

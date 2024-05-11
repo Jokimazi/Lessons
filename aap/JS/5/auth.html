@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Авторизация </title>
+        <script type="text/javascript">
+            function checkPassword() 
+                {
+                    var login = document.getElementById("login").value.toLowerCase() ;
+                    var password = document.getElementById("password").value.toLowerCase() ;
+                    if ((password == "pas1" && login == "log1") ||
+                        (password == "pas2" && login == "log2") ||
+                        (password == "pas3" && login == "log3"))
+                        {
+                            document.getElementById("message").innerHTML = '<a href="../6/home.html"> Перейти на главную страницу </a>';
+                        }
+                    else
+                        {
+                            document.getElementById("message").innerText = "Логин или пароль не верный";
+                        }
+                }
+        </script>
+    </head> 
+    <body bgcolor="lightgreen">
+        <div align="center">
+            <h1><font face="Arial"> Авторизация </font></h1>
+            <input type="text" id="login" placeholder="Почта">
+            <input type="password" id="password" placeholder="Пароль">
+            <input type="button" onclick="checkPassword()" value="Войти">
+            <br><br><a href="../6/register.html">Регистрация</a>
+            <br><p id="message"></p>
+        </div>
+    </body>
+</html>

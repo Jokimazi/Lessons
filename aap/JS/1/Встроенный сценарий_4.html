@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> Создание объекта с помощью литерала объекта </title>
+	</head>
+	<body bgcolor="silver">
+	<center>
+	<h1> Уважаемый пользователь !!!! </h1>
+	<h3> *******************************************************************************
+	<script type="text/javascript">
+				var monthNames = new Array ("Января","Февраля","Марта","Апреля","Мая","Июня","Июля","Августа","Сентября","Октября","Ноября","Декабря");
+				var dayNames = new Array ("Понедельник","Вторник","Среда","Четврег","Пятница","Суббота","Воскресенье");
+				var today = new Date();
+				var str = "Сегодня: "+today.getDate()+" ";
+				str += monthNames[today.getMonth()]+" ";
+				str += today.getFullYear()+"года, ";
+				str += dayNames[today.getDay()]+"\n";
+				document.write("<pre>");
+				str += "Сейчас:"+today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+				document.write(str);
+	</script>
+	</h3>
+	<img src="календарь.jpg" width="120" height="125" align="center">
+	<center>
+	</body>
+</html>

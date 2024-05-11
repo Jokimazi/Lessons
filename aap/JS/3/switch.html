@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title> Использование инструкции switch </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var xx = prompt('Введите код операции (1-5) для оплаты выбранного товара:', '')*1;
+			switch (xx)
+			{
+				case 1: alert('Оплата наличными'); break;
+				case 2: alert('Оплата через Сбербанк онлайн'); break;
+				case 3: alert('Оплата '); break;
+				case 4: alert('Оплата через систему Qiwi'); break;
+				case 5: alert('Оплата через квитанцию'); break;
+				default: alert('Ошибка в коде операции')
+			}
+		</script>
+	</body>
+</html>

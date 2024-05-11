@@ -1,0 +1,10 @@
+var monthNames = new Array ("Января","Февраля","Марта","Апреля","Мая","Июня","Июля","Августа","Сентября","Октября","Ноября","Декабря");
+var dayNames = new Array ("Понедельник","Вторник","Среда","Четврег","Пятница","Суббота","Воскресенье");
+var today = new Date();
+var str = "Сегодня: "+today.getDate()+" ";
+str += monthNames[today.getMonth()]+" ";
+str += today.getFullYear()+"года, ";
+str += dayNames[today.getDay()]+"\n";
+document.write("<pre>");
+str += "Сейчас:"+today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+document.write(str);

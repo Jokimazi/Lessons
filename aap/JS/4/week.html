@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title> Пользовательская функция без параметров </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function week(num)
+			{
+				switch (num)
+				{
+					case 1: return 'Понедельник';
+					case 2: return 'Вторник';
+					case 3: return 'Среда';
+					case 4: return 'Четверг';
+					case 5: return 'Пятница';
+					case 6: return 'Суббота';
+					case 7: return 'Воскресенье';
+					default: return 'Ввод не верный!';
+				}
+			}
+			
+			var n = +prompt('Введите число от 1 до 7, чтбы узнать какой это день недели:');
+			alert(week(n));
+		</script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="windows-1251">
+  <title> Изучаем ошибки в JavaScript> </title>
+<!--
+1. Было предупреждение добавил !DOCTYPE чтобы убрать его
+2. Строка через пробел не работает + точка с запятой не поставлена
+3. MYWINDOW != myWindow
+4. Добавил кавычку
+5. Сменил кодировку utf-8 на windows-1251
+-->
+<script>
+     function openWindow() 
+     {
+     myWindow = open("", "TestWindow", "width=300,height=100,status=no,toolbar=no,menubar=no");
+     myWindow.document.open();
+     myWindow.document.write("<html><head><title>NewWindow");
+     myWindow.document.write("</title></head><body>");
+     myWindow.document.write("Молодец, хорошо прослушал(а) лекцию!");
+     myWindow.document.write("</body></html>");
+     myWindow.document.close();
+     }
+   </script>
+  </head>
+  <body>
+   <form>
+   <input type=button value="Открыть окно" onClick="openWindow()">
+   </form>
+  </body>
+</html>

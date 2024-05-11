@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title> Пользовательская функция без параметров </title>
+	</head>
+		<script type="text/javascript">
+			function hello(d)
+			{
+				alert("Привет " + d);
+			}
+			var sex = prompt('Введите ваш пол (мужской/женский):');
+			switch (sex)
+			{
+				case "мужской": hello(', уважаемый гость!');break;
+				case "женский": hello(', уважаемая гостья!');break;
+				default: alert('Ввод не верный!');break;
+			}
+		</script>
+	<body>
+		
+	</body>
+</html>

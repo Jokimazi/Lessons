@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title> Использование инструкции if - else </title>
+	</head>
+	<body>
+		<center>
+		<script type="text/javascript">
+			var xx = prompt('Введите четырехзначный ПИНкод вашей карты. У вас 5 попыток', '')*1;
+			var i = 1;
+			do
+			{
+				if  (xx == 1234)
+				{
+					alert("Верно");
+					document.write('<p><a href="https://www.sber.ru"> https://www.sber.ru </a></p>');
+					break;
+				}
+				else
+				{
+					alert('Неверно, еще ' +(5-i)+ ' попыток');
+					xx = prompt('Введите четырехзначный ПИНкод вашей карты', '')*1;
+					i++;
+				}
+			}
+			while (i < 5);
+		</script>
+		</center>
+	</body>
+</html>
