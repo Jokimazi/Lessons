@@ -13,6 +13,6 @@ def test():
 
 @app.route('/calc')
 def calc():
-
+    pass
 
 app.run()
