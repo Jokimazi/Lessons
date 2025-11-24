@@ -1,0 +1,14 @@
+D:\Projects\Development\repos\code_review_ex\bin\Debug\net8.0\code_review_ex.exe
+D:\Projects\Development\repos\code_review_ex\bin\Debug\net8.0\code_review_ex.deps.json
+D:\Projects\Development\repos\code_review_ex\bin\Debug\net8.0\code_review_ex.runtimeconfig.json
+D:\Projects\Development\repos\code_review_ex\bin\Debug\net8.0\code_review_ex.dll
+D:\Projects\Development\repos\code_review_ex\bin\Debug\net8.0\code_review_ex.pdb
+D:\Projects\Development\repos\code_review_ex\obj\Debug\net8.0\code_review_ex.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Development\repos\code_review_ex\obj\Debug\net8.0\code_review_ex.AssemblyInfoInputs.cache
+D:\Projects\Development\repos\code_review_ex\obj\Debug\net8.0\code_review_ex.AssemblyInfo.cs
+D:\Projects\Development\repos\code_review_ex\obj\Debug\net8.0\code_review_ex.csproj.CoreCompileInputs.cache
+D:\Projects\Development\repos\code_review_ex\obj\Debug\net8.0\code_review_ex.dll
+D:\Projects\Development\repos\code_review_ex\obj\Debug\net8.0\refint\code_review_ex.dll
+D:\Projects\Development\repos\code_review_ex\obj\Debug\net8.0\code_review_ex.pdb
+D:\Projects\Development\repos\code_review_ex\obj\Debug\net8.0\code_review_ex.genruntimeconfig.cache
+D:\Projects\Development\repos\code_review_ex\obj\Debug\net8.0\ref\code_review_ex.dll
